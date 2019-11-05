@@ -36,7 +36,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>HelloWorld</mainClass>
+							<mainClass>Homework1</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -49,7 +49,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 				<executions>
 					<execution>
 						<id>my-maven-assembly-plugin</id>
-						<phase></phase>
+						<phase>package</phase>
 						<goals><goal>Single</goal></goals>
 						
 					</execution>
@@ -61,7 +61,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 					</descriptorRefs>
 					<archive>
 						<manifest>
-							<mainClass>HelloWorld</mainClass>
+							<mainClass>Homework1</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
