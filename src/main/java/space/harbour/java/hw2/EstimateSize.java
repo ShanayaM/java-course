@@ -11,27 +11,29 @@ final class EstimateSize {
         // To prevent instantiation
     }
 
-    public static void main(String[] args) {
+    private static final int ARRAY_SIZE = 160_000_000;
+    private static final int SLEEP_TIME = 10;
+
+    public static void main(String[] args) throws InterruptedException {
         System.gc();
-        int[] i = new int[160_000_000];  // int
-        int sleepTime = 10;
+        int[] i = new int[ARRAY_SIZE];  // int
         System.out.println(Runtime.getRuntime().totalMemory()
                 - Runtime.getRuntime().freeMemory());
-        Thread.sleep(sleepTime);
+        Thread.sleep(SLEEP_TIME);
 
         Integer integer = null;    // reference
         System.out.println(Runtime.getRuntime().totalMemory()
                 - Runtime.getRuntime().freeMemory());
-        Thread.sleep(sleepTime);
+        Thread.sleep(SLEEP_TIME);
 
         String string = null;      // string
         System.out.println(Runtime.getRuntime().totalMemory()
                 - Runtime.getRuntime().freeMemory());
-        Thread.sleep(sleepTime);
+        Thread.sleep(SLEEP_TIME);
 
         Object object = null;      // object
         System.out.println(Runtime.getRuntime().totalMemory()
                 - Runtime.getRuntime().freeMemory());
-        Thread.sleep(sleepTime);
+        Thread.sleep(SLEEP_TIME);
     }
 }
