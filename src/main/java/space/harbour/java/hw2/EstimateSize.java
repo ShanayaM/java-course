@@ -6,7 +6,7 @@
 package main.java.space.harbour.java.hw2;
 
 final class EstimateSize {
-    
+
     private EstimateSize() {
         // To prevent instantiation
     }
