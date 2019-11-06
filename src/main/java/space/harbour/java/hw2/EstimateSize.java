@@ -1,6 +1,7 @@
 /*
-* Create a class EstimateSize to estimate size of int, reference, Object, and String using totalMemory() and freeMemory() methods.
-* */
+* Create a class EstimateSize to estimate size of int, reference,
+* Object, and String using totalMemory() and freeMemory() methods
+*/
 
 package main.java.space.harbour.java.hw2;
 
