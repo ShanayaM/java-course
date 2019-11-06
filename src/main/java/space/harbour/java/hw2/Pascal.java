@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Pascal {
 
-    static void printTriangle(int n) {
+    static void printTriangle(final int n) {
 
         for (int line = 1; line <= n; line++) {
             int c = 1;
