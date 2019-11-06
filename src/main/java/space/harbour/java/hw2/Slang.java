@@ -3,6 +3,10 @@ package main.java.space.harbour.java.hw2;
 import java.util.Scanner;
 
 final class Slang {
+    
+    private Slang() {
+        // Prevent instantiation
+    }
 
     static String fixAbbreviations(final String str) {
         String matchPattern = str.replaceAll("PLZ", "please");
