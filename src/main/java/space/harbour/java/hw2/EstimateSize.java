@@ -8,7 +8,6 @@ public final class EstimateSize {
 
     public static void main(String[] args) {
         System.gc();
-        
         int i;  // int
         Integer integer;    // reference
         String string;      // string
