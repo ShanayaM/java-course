@@ -2,7 +2,7 @@ package main.java.space.harbour.java.hw2;
 
 import java.util.Scanner;
 
-public final class Slang {
+final class Slang {
 
     static String fixAbbreviations(final String str) {
         String matchPattern = str.replaceAll("PLZ", "please");
