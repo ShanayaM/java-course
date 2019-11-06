@@ -4,21 +4,24 @@ import java.util.Scanner;
 
 public class Slang {
 
-    static String fixAbbreviations(String str) {
-        String[] abbreviations = new String[]{"PLZ", "FYI", "GTFO", "ASAP"};
-        String fixed_text = str.replaceAll(abbreviations[0], "please");
-        fixed_text = fixed_text.replaceAll(abbreviations[1], "for your information");
-        fixed_text = fixed_text.replaceAll(abbreviations[2], "please, leave me alone");
-        fixed_text = fixed_text.replaceAll(abbreviations[3], "as soon as possible");
-        return fixed_text;
+    static String fixAbbreviations(final String str) {
+        String match_pattern = str.replaceAll("PLZ", "please");
+        match_pattern = match_pattern.replaceAll("FYI", 
+                                                 "for your information");
+        match_pattern = match_pattern.replaceAll("GTFO",
+                                                 "please, leave me alone");
+        match_pattern = match_pattern.replaceAll("ASAP",
+                                                 "as soon as possible");
+        return match_pattern;
     }
 
-    static String fixSmiles(String str) {
-        String[] smilies = new String[]{":\\)", ":\\(", "¯\\_(ツ)_/¯"};
-        String fixed_text = str.replaceAll(smilies[0], "[smiling]");
-        fixed_text = fixed_text.replaceAll(smilies[1], "[sad]");
-        fixed_text = fixed_text.replaceAll(smilies[2], "[such is life]");
-        return fixed_text;
+    static String fixSmiles(final String str) {
+        String[] smilies = new String[]{":\\)", ":\\(", 
+                                        "¯\\_(ツ)_/¯"};
+        String match_pattern = str.replaceAll(smilies[0], "[smiling]");
+        match_pattern = fixed_text.replaceAll(smilies[1], "[sad]");
+        match_pattern = fixed_text.replaceAll(smilies[2], "[such is life]");
+        return match_pattern;
     }
 
     public static void main(String[] args) {
