@@ -2,11 +2,11 @@ package main.java.space.harbour.java.hw2;
 
 import java.util.Scanner;
 
-public class Slang {
+public final class Slang {
 
     static String fixAbbreviations(final String str) {
         String match_pattern = str.replaceAll("PLZ", "please");
-        match_pattern = match_pattern.replaceAll("FYI", 
+        match_pattern = match_pattern.replaceAll("FYI",
                                                  "for your information");
         match_pattern = match_pattern.replaceAll("GTFO",
                                                  "please, leave me alone");
@@ -16,7 +16,7 @@ public class Slang {
     }
 
     static String fixSmiles(final String str) {
-        String[] smilies = new String[]{":\\)", ":\\(", 
+        String[] smilies = new String[]{":\\)", ":\\(",
                                         "¯\\_(ツ)_/¯"};
         String match_pattern = str.replaceAll(smilies[0], "[smiling]");
         match_pattern = fixed_text.replaceAll(smilies[1], "[sad]");
