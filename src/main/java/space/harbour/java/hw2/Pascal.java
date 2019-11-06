@@ -3,11 +3,11 @@ package main.java.space.harbour.java.hw2;
 import java.util.Scanner;
 
 final class Pascal {
-    
+
     private Pascal() {
         // To prevent instantiation
     }
-    
+
     static void printTriangle(final int n) {
 
         for (int line = 1; line <= n; line++) {
