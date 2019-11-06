@@ -2,7 +2,7 @@ package main.java.space.harbour.java.hw2;
 
 import java.util.Scanner;
 
-public class Pascal {
+final class Pascal {
 
     static void printTriangle(final int n) {
 
