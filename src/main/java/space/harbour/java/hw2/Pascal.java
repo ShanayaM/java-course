@@ -5,9 +5,9 @@ import java.util.Scanner;
 final class Pascal {
     
     private Pascal() {
-        // Prevent instantiation
+        // To prevent instantiation
     }
-
+    
     static void printTriangle(final int n) {
 
         for (int line = 1; line <= n; line++) {
