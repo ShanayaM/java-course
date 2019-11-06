@@ -5,7 +5,7 @@
 
 package main.java.space.harbour.java.hw2;
 
-public final class EstimateSize {
+final class EstimateSize {
 
     public static void main(String[] args) {
         System.gc();
