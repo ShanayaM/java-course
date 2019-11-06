@@ -4,9 +4,9 @@
 
 package main.java.space.harbour.java.hw2;
 
-public class EstimateSize {
+public final class EstimateSize {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.gc();
         
         int i;  // int
