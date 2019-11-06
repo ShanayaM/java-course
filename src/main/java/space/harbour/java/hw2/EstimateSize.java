@@ -13,12 +13,24 @@ final class EstimateSize {
 
     public static void main(String[] args) {
         System.gc();
-        int i;  // int
-        Integer integer;    // reference
-        String string;      // string
-        Object object;      // object
+        int[] i = new int[160000000];  // int
+        System.out.println(Runtime.getRuntime().totalMemory() -
+                Runtime.getRuntime().freeMemory());
+        Thread.sleep(10);
 
-        System.out.println(Runtime.getRuntime().totalMemory());
-        System.out.println(Runtime.getRuntime().freeMemory());
+        Integer integer = null;    // reference
+        System.out.println(Runtime.getRuntime().totalMemory() -
+                Runtime.getRuntime().freeMemory());
+        Thread.sleep(10);
+
+        String string = null;      // string
+        System.out.println(Runtime.getRuntime().totalMemory() -
+                Runtime.getRuntime().freeMemory());
+        Thread.sleep(10);
+
+        Object object = null;      // object
+        System.out.println(Runtime.getRuntime().totalMemory() -
+                Runtime.getRuntime().freeMemory());
+        Thread.sleep(10);
     }
 }
