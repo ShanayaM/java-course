@@ -2,7 +2,7 @@ package main.java.space.harbour.java.hw3;
 
 import java.util.Map;
 
-public class Element<K, V> implements Map.Entry<K, V> {
+public final class Element<K, V> implements Map.Entry<K, V> {
     private K key;
     private V value;
 
@@ -22,7 +22,8 @@ public class Element<K, V> implements Map.Entry<K, V> {
     }
 
     @Override
-    public V setValue(V value) {
-        return this.value = value;
+    public V setValue(final V value) {
+        this.value = value;
+        return this.value;
     }
 }
