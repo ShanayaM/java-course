@@ -6,9 +6,9 @@ public final class Element<K, V> implements Map.Entry<K, V> {
     private K key;
     private V value;
 
-    public Element(K key, V value) {
-        this.key = key;
-        this.value = value;
+    public Element(final K k, final V v) {
+        this.key = k;
+        this.value = v;
     }
 
     @Override
@@ -22,8 +22,8 @@ public final class Element<K, V> implements Map.Entry<K, V> {
     }
 
     @Override
-    public V setValue(final V value) {
-        this.value = value;
-        return this.value;
+    public V setValue(final V v) {
+        this.value = v;
+        return this.v;
     }
 }
