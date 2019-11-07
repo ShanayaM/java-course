@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
 
-public class MyHashMap<K, V> implements Map<K, V> {
+public final class MyHashMap<K, V> implements Map<K, V> {
 
     private int size = 0;
     private final int bucketSize = 10;
