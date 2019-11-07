@@ -24,6 +24,6 @@ public final class Element<K, V> implements Map.Entry<K, V> {
     @Override
     public V setValue(final V v) {
         this.value = v;
-        return this.v;
+        return this.value;
     }
 }
