@@ -8,4 +8,5 @@
     <suppress message="Missing a Javadoc comment."/>
     <suppress message="Missing package-info.java file."/>
     <suppress message="Parameter args should be final."/>
+    <suppress checks="MagicNumber" files="ExampleValue\.java"/>
 </suppressions>
