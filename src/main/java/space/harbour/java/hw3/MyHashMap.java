@@ -75,13 +75,13 @@ public final class MyHashMap<K, V> implements Map<K, V> {
 
     @Override
     public V get(final Object key) {
-        int hash = Math.abs(key.hashCode() & bucketSize);
+        int hash = Math.abs(key.hashCode() % bucketSize);
 
         if (buckets[hash] != null) {
             if (buckets[hash] instanceof Element) {
                 Element<K, V> element = (Element<K, V>) buckets[hash];
 
-                if (element.getValue().equals(key)) {
+                if (element.getKey().equals(key)) {
                     return element.getValue();
                 }
             } else if (buckets[hash] instanceof LinkedList) {
