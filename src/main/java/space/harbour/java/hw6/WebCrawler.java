@@ -1,4 +1,4 @@
-package main.java.space.harbour.java.hw5;
+package main.java.space.harbour.java.hw6;
 
 import java.io.BufferedReader;
 import java.io.IOException;
