@@ -10,7 +10,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
 
-public class TestATM {
+public class TestATMHW8 {
     ArrayList<Integer> denomination;
     ATM atm;
     private final int n = 10;
