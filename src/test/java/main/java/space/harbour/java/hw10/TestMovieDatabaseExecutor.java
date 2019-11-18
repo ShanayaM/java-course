@@ -1,6 +1,6 @@
 package main.java.space.harbour.java.hw10;
 
-import com.mongodb.BasicDBObject;
+/*import com.mongodb.BasicDBObject;
 import main.java.space.harbour.java.hw7.Movie;
 import org.junit.After;
 import org.junit.Before;
@@ -48,4 +48,6 @@ public class TestMovieDatabaseExecutor {
 
         assertEquals(1, executor.execQuery(query).size());
     }
+    
 }
+*/
