@@ -19,10 +19,10 @@ public final class MovieDatabaseExecutor {
     private MongoDatabase database;
     private MongoClient client;
     private MongoCollection<Document> collection;
-    
+
     private final String host = "localhost";
     private final int port = 27107;
-    
+
     private String collectionName = "movies";
     private String dbName = "java-homework";
 
