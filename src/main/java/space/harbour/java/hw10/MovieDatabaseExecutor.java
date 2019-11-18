@@ -53,7 +53,7 @@ public final class MovieDatabaseExecutor {
         collection.drop();
     }
 
-    public List<Movie> execReadFromDatabase(final BasicDBObject query) {
+    public List<Movie> execQuery(final BasicDBObject query) {
         List<Movie> movies = new ArrayList<>();
         FindIterable<Document> documents = collection.find(query);
 
