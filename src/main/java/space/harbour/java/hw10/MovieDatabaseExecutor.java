@@ -19,13 +19,15 @@ public final class MovieDatabaseExecutor {
     private MongoDatabase database;
     private MongoClient client;
     private MongoCollection<Document> collection;
-    private String ipAddress = "localhost";
+    
+    private final String host = "localhost";
     private final int port = 27107;
+    
     private String collectionName = "movies";
     private String dbName = "java-homework";
 
     public MovieDatabaseExecutor() {
-        client = new MongoClient(ipAddress, port);
+        client = new MongoClient(host, port);
         database = client.getDatabase(dbName);
         collection  = database.getCollection(collectionName);
     }
